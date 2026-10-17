@@ -3,20 +3,14 @@
 
 
 def uppercase(str):
-    """Imprime la cadena en mayúsculas seguida de una nueva línea.
-
-    Usa códigos ASCII (ord y chr) para convertir cada carácter
-    minúsculo a su equivalente en mayúscula, sin usar .upper().
-    No devuelve ningún valor.
-    """
-    result = ""
+    """Imprime la cadena en mayúsculas usando ASCII sin usar .upper()."""
     for c in str:
         code = ord(c)
         if 97 <= code <= 122:
-            result += chr(code - 32)
+            print("{}".format(chr(code - 32)), end="")
         else:
-            result += c
-    print(result)
+            print("{}".format(c), end="")
+    print()
 
 
 def main():
@@ -24,7 +18,6 @@ def main():
     uppercase("Holberton")
     uppercase("hello world")
     uppercase("Python 3.8")
-    uppercase("123 ABC xyz")
 
 
 if __name__ == "__main__":
