@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Programa que importa funciones de calculator_1 y realiza operaciones."""
+"""Programa que importa funciones y realiza operaciones."""
 
 from calculator_1 import add, sub, mul, div
 
