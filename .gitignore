@@ -7,3 +7,4 @@ __pycache__/
 *.swo
 *~
 variable_load_5.py
+*.txt
