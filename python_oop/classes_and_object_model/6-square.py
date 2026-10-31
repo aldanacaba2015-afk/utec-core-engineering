@@ -32,7 +32,7 @@ class Square:
     @position.setter
     def position(self, value):
         """Establece la posicion validando tupla de dos enteros."""
-        message = "position must be a tuple of 2 positive integer"
+        message = "position must be a tuple of 2 positive integers"
         if type(value) is not tuple or len(value) != 2:
             raise TypeError(message)
         if type(value[0]) is not int or type(value[1]) is not int:
